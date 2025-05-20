@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model JazzDBMVC.Data.AlbumWithArtist
+
+@{
+    ViewData["Title"] = "CreateAlbum";
+}
+
+<h1>CreateAlbum</h1>
+
+<form asp-action="CreateAlbum">
+    <div class="form-group">
+        <label asp-for="AlbumName"></label>
+        <input asp-for="AlbumName" class="form-control" />
+        <span asp-validation-for="AlbumName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AlbumImageUrl"></label>
+        <input asp-for="AlbumImageUrl" class="form-control" />
+        <span asp-validation-for="AlbumImageUrl" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LabelName"></label>
+        <input asp-for="LabelName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Copyrights"></label>
+        <input asp-for="Copyrights" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ReleaseDate"></label>
+        <input asp-for="ReleaseDate" class="form-control" type="date" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AlbumBlurb"></label>
+        <textarea asp-for="AlbumBlurb" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AlbumUrl"></label>
+        <input asp-for="AlbumUrl" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ArtistId">Artist</label>
+        <select asp-for="ArtistId" class="form-control" asp-items="ViewBag.Artists">
+        <option value="">-- Select an Artist --</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">CreateAlbum</button>
+</form>

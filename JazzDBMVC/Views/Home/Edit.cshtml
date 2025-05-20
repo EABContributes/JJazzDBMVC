@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model JazzDBMVC.Data.AlbumWithArtist
+
+<h2>Edit Album</h2>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="AlbumId" />
+    <div class="form-group">
+        <label asp-for="AlbumName" class="control-label">Album Name</label>
+        <input asp-for="AlbumName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ArtistName" class="control-label">Artist Name</label>
+        <input asp-for="ArtistName" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="AlbumImageUrl" class="control-label">Album Image URL</label>
+        <input asp-for="AlbumImageUrl" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LabelName" class="control-label">Label Name</label>
+        <input asp-for="LabelName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ReleaseDate" class="control-label">Release Date</label>
+        <input asp-for="ReleaseDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AlbumBlurb" class="control-label">Album Blurb</label>
+        <textarea asp-for="AlbumBlurb" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="AlbumUrl" class="control-label">Album URL</label>
+        <input asp-for="AlbumUrl" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

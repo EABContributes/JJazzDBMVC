@@ -1,0 +1,86 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<JazzDBMVC.Data.AlbumWithArtist>
+<div class="text-center">
+    <h1 class="display-4">Albums</h1>
+    <p>The Albums are going to go here.</p>
+</div>
+
+<div class="mb-3">
+    <div class="d-flex justify-content-between">
+        <div>
+            <a class="btn btn-success" asp-action="CreateAlbum">Create New Album</a>
+            <a class="btn btn-success" asp-action="CreateArtist">Add New Artist</a>
+        </div>
+        <div>
+            <input type="text" id="filterInput" class="form-control" placeholder="Filter by Album Name or Artist Name" />
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped table-hover" id="albumTable">
+    <thead class="table-dark">
+        <tr>
+            <th>Album ID</th>
+            <th>Album Name</th>
+            <td>Artist Name</td>
+            <th>Release Date</th>
+            <th>Label Name</th>
+            <th>Album Blurb</th>
+            <th>Album URL</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var album in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@album.AlbumImageUrl" alt="Album Cover" style="width: 100px; height: 100px; object-fit: cover;">
+                </td>
+                <td>@album.AlbumName</td>
+                <td>@album.ArtistName</td>
+                <td>@album.ReleaseDate.ToShortDateString()</td>
+                <td>@album.LabelName</td>
+                <td>@album.AlbumBlurb</td>
+                <td>
+                    <a href="https://open.spotify.com/album/@album.AlbumUrl" target="_blank">
+                        Open on Spotify
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@album.AlbumId">Edit</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@album.AlbumId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!--This could be in a dedicated script-->
+<script>
+    document.getElementById('filterInput').addEventListener('keyup', function (e) {
+        console.log('Key pressed:', e.key);  // Debugging feedback
+        var filter = this.value.toLowerCase();
+        var rows = document.querySelectorAll('#albumTable tr');
+
+        rows.forEach(function (row) {
+            var albumName = row.cells[1].textContent.toLowerCase();
+            var artistName = row.cells[2].textContent.toLowerCase();
+            if (albumName.includes(filter) || artistName.includes(filter)) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            console.log('Enter key pressed');
+        }
+    });
+</script>
