@@ -1,0 +1,1 @@
+This folder likely contains format errors that I fixed on-the-fly. SQL does not like non-ASCII-table characters.

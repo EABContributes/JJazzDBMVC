@@ -1,0 +1,70 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the J-Jazz Database.</h1>
+    <h3>This is a data-driven exploration of key performers and albums that make up the heart and history of Japan’s domestic jazz scene.</h3>
+
+</div>
+<br />
+
+<div class="text-center">
+    <h2 class="display-4">A Formal Primer</h2>
+</div>
+
+<p> There are many cultural factors that have led the pursuit of Jazz music, not unlike many other crafts, do develop a unique flavor in Japan.
+    The country is home to many celebrated figures of the genre's recent history, The audience for jazz music in Japan has developed some unique behaviors around appreciating the music, such as the 'Jazz Kissa'.
+    Jazz was introduced to the country in the 1920s after big bands appeared from overseas, bringing with them the pop music of the day.
+    Not everyone was a fan. Similar to its supression in Nazi Germany, Japan's hyperconservative prewar ruling class despised the 'raunchiness' and 'Americanness' of this newly popular music,
+    and ordered for it to be banned and the dance clubs to be closed. Once war broke out, Jazz was banned under the notion of it being the music of the enemy, but in small circles, it still managed to find an audience.
+</p>
+
+<p> Following the end of the war, soldiers invovled in the American occupation and the Victory Disks they brought with them introduced Jazz to a new generation of young Japanese people
+    desperately looking for fun things to do. Soon, jazz bars and similar venues started popping up across the country, especially in areas of heavy occupation, like Tokyo and Osaka.
+    Many pioneering Japanese jazz musicians got their start in this postwar era, like pianist and band leader Toshihiko Akiyoshi, pianist Ryo Fukui, and saxophonist Sadao Watanabe.
+</p>
+
+<p> Around this time, the demand for jazz music far exceeded what all but the most extreme enthusiasts could afford to pay for in the form of imported LPs and record players.
+    A new form of venue emerged, called a 'Jazz Kissa' or 'Jazz Cafe', where patrons, who are typically not intoxicated, buy something to drink
+    and then sit around a hi-fi set and listen intently through an entire record. Over time, this way of engaging with the music has become a cultural export
+    to other hubs of Jazz around the world, like London and New York City.</p>
+
+<p>  Starting around the 1960s, it became increasingly popular for jazz musicians and rock musicians to release
+     live albums recorded in Japan, which became known widely among hi-fi enthusiasts for the amount of care 
+     by recording engineers at Japanese venues like the Budokan or Blue Note Tokyo to record every detail of the 
+     live performance. It has also been very common for the Japanese market to get special cuts of certain albums, 
+     with bonus tracks or demo versions, to encourage domestic consumers to visit local record stores instead of 
+     cross-importing at lower costs.</p>
+
+<p>
+    Many popular music movements in Japan have had a great deal of interplay with what was happening in the global
+    jazz scene at the time, particularly exemplified by the brassy, synthy jazz fusion sounds of the 80s’ ‘City Pop’ 
+    and the easy listening bossa & twee pop
+    atmospheres of ‘Shibuya-kei’ at the turn of the 21st century. The musical vocabulary of Japan’s ‘Enka’
+    tradition often feels like a cross between a distinctly Japanese folk song form, mid-century pop, and the blues.
+</p>
+
+<p>
+    A country home to many companies producing the earliest commercially viable electronic synthesizers like YAMAHA
+    and KORG, it’s no surprise that many of the most influential groups playing with the sounds of FM-synthesized music and 
+    Jazz Fusion came out of Japan, 
+    like Yellow Magic Orchestra (YMO), Tatsuro Yamashita, CASIOPEA, T-SQUARE, and more. Thanks to the whims
+    of the all-powerful YouTube algorithm, many of these Japanese fusion artists and bands saw a sudden wave of
+    global internet cult popularity in the late 2010s-early 2020s.
+</p>
+
+<p>
+    Equally popular among online audiences have been covers of jazz-inspired covers lifted from Japanese cultural
+    exports like anime, video games, and films, performed by both domestic and international groups, such as
+    TOKYO BRASS STYLE, TOKYO Active NEETs, The 8-Bit Big Band, Patrick Bartley, The Consouls, or Rasmus Faber’s
+    Platina Jazz Big Band. Alongside these covers are original soundtrack selections that were arranged and recorded
+    by full-blown jazz musicians, such as Yuji Ohno (Lupin III), HIROMI (BLUE GIANT) or Yoko Kanno and SEATBELTS (Cowboy Bebop).
+    Some of these properties have jazz music at the cornerstone of their narrative, particularly in the case of BLUE GIANT 
+    and Kids on the Slope (like Cowboy Bebop, also directed by Shinichiro Watanabe and scored by Kanno).
+</p>
+<p>
+    Countries around the world have developed unique modern musical cultures waiting to be explored.
+    Some evolve from what musicians hear coming out of 'western' music, while others draw on a local music tradition or
+    pop into existence almost sponaneously. The current state of Japanese jazz music certainly shows examples of both.
+</p>
